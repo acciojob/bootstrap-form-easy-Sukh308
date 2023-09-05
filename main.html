@@ -42,6 +42,7 @@
                 <div class="col-3 mt-4">
                     <label for="grad">Graduation Year</label>
                     <select id="grad" class="form-select" required>
+						<option selected disabled value="">Choose...</option>
                         <option value=""></option>
                         <option value="2020">2020</option>
                         <option value="2021">2021</option>
@@ -61,18 +62,20 @@
                     </div>
                 </div>
 
-                <div class="col-12 mt-4">
-                    <input type="checkbox" label="check" class="form-check-inline checkbox" required>
-
-                    <label for="check" class="checkbox-label">Agree to terms and conditions</label>
-                    <div class="invalid-feedback">You must be agree before submitting</div>
-                </div>
-
-                <div class="col-3 mt-4">
-                    <button class="btn btn-primary">Submit</button>
-
-                </div>
-            </div>
+               <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+      <label class="form-check-label" for="invalidCheck3">
+        Agree to terms and conditions
+      </label>
+      <div id="invalidCheck3Feedback" class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
         </form>
   
 </div>
